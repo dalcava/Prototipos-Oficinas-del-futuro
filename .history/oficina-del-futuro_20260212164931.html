@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Oficina del Futuro</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  /* Contenedor del botón */
+  .back-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+
+  /* Botón circular */
+  .back-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+  }
+
+  .back-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  }
+
+  .back-btn svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  /* Tooltip */
+  .tooltip {
+    margin-top: 10px;
+    background: #0f172a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .back-container:hover .tooltip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="back-container">
+  <button class="back-btn" onclick="volver()">
+    <svg viewBox="0 0 24 24">
+      <path d="M15 18l-6-6 6-6"/>
+    </svg>
+  </button>
+  <div class="tooltip">Volver al home</div>
+</div>
+
+<h1>Oficina del Futuro</h1>
+
+<script>
+  function volver() {
+    window.location.href = "index.html";
+  }
+</script>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800px" src="https://embed.figma.com/proto/gQwmpaiHxb7nN2qWgJxYrO/AVC?page-id=0%3A1&node-id=155-353&viewport=-2095%2C2220%2C0.59&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=155%3A326&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+</body>
+</html>

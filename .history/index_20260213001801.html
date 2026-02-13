@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Home</title>
+<div class="hero">
+  <div class="hero-badge">Iniciativa Estratégica</div>
+  <h1>Fábrica de Soluciones</h1>
+  <p>
+    La Fábrica de Soluciones surge como una iniciativa estratégica destinada a impulsar 
+    la transformación integral del Grupo Aval mediante el desarrollo de capacidades, 
+    plataformas y experiencias unificadas.
+    <br><br>
+    Este espacio consolida iniciativas clave enfocadas en evolución digital, innovación 
+    financiera y construcción de ecosistemas integrados que habiliten crecimiento, 
+    eficiencia y valor para usuarios, comercios y empresas.
+  </p>
+</div>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f4f6f9;
+    padding: 40px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    color: #0f172a;
+    padding: 0px 0px 0px 60px;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 60px;
+    border-radius: 28px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero h1 {
+    margin: 0 0 20px 0;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #C6E7FF;
+  }
+
+  .hero p {
+    max-width: 720px;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: #C6E7FF;
+    color: #0f172a;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+
+
+  .cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 60px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    width: 220px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+
+  .icon-blue { background: #e7f0ff; }
+  .icon-green { background: #e6f7ef; }
+  .icon-purple { background: #f2e9ff; }
+
+  .card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f172a;
+  }
+
+  .card p {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #64748b;
+  }
+
+  svg {
+    width: 26px;
+    height: 26px;
+  }
+
+</style>
+</head>
+
+<body>
+
+<h2>Accesos rápidos</h2>
+
+<div class="cards">
+
+  <!-- Aval Pay Center -->
+  <div class="card" onclick="ir('aval-pay-center.html')">
+    <div class="icon-box icon-blue">
+      <!-- Icono rayo -->
+      <svg fill="none" stroke="#2563eb" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/>
+      </svg>
+    </div>
+    <h3>Aval Pay Center</h3>
+    <p>Pagos y servicios</p>
+  </div>
+
+  <!-- Corresponsales -->
+  <div class="card" onclick="ir('corresponsales.html')">
+    <div class="icon-box icon-green">
+      <!-- Icono móvil -->
+      <svg fill="none" stroke="#16a34a" stroke-width="2" viewBox="0 0 24 24">
+        <rect x="7" y="2" width="10" height="20" rx="2"/>
+        <line x1="11" y1="18" x2="13" y2="18"/>
+      </svg>
+    </div>
+    <h3>Corresponsales</h3>
+    <p>Puntos físicos</p>
+  </div>
+
+  <!-- Oficina del Futuro -->
+  <div class="card" onclick="ir('oficina-del-futuro.html')">
+    <div class="icon-box icon-purple">
+      <!-- Icono edificio -->
+      <svg fill="none" stroke="#9333ea" stroke-width="2" viewBox="0 0 24 24">
+        <rect x="4" y="3" width="16" height="18" rx="2"/>
+        <line x1="8" y1="7" x2="8" y2="7"/>
+        <line x1="12" y1="7" x2="12" y2="7"/>
+        <line x1="16" y1="7" x2="16" y2="7"/>
+      </svg>
+    </div>
+    <h3>Oficina del Futuro</h3>
+    <p>Experiencia digital</p>
+  </div>
+
+</div>
+
+<script>
+  function ir(pagina) {
+    window.location.href = pagina;
+  }
+</script>
+
+</body>
+</html>

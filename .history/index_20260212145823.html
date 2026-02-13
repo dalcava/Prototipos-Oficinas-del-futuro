@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      gap: 20px;
+      margin: 0;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Home</h1>
+
+  <button onclick="ir('aval-pay-center.html')">
+    Aval Pay Center
+  </button>
+
+  <button onclick="ir('corresponsales.html')">
+    Corresponsales
+  </button>
+
+  <button onclick="ir('oficina-del-futuro.html')">
+    Oficina del Futuro
+  </button>
+
+  <script>
+    function ir(pagina) {
+      window.location.href = pagina;
+    }
+  </script>
+
+</body>
+</html>
